@@ -15,6 +15,8 @@ public class Main {
         groupList.add(new GroupMember("Voyt", 100, 100));
         groupList.add(new GroupMember("Piotr", 9001, 3000));
 
+        Group żabki = new Group("Żabki", groupList);
+
         Scanner scanner = new Scanner(System.in);
 
 
@@ -37,7 +39,7 @@ public class Main {
 
         System.out.println("Peter uses his teaching skills...I can see the code!");
 
-        powerUpGroup(groupList);
+        żabki.powerUpGroup();
 
 //        for (GroupMember supportingGroupMember :groupList){
 //            for(GroupMember supportedGroupMember :groupList) {
@@ -51,28 +53,31 @@ public class Main {
 
         System.out.println("Peter uses his teaching skills...OMG!!!");
 
-        powerUpGroup(groupList);
-
+        żabki.powerUpGroup();
         writeListToConsole(groupList);
+
+//        writeListToConsole(żabki.getMembersList());
+//        żabki.writeToConsole();
+
         writeAndWait(scanner, "Day three training. Do you want to commence?");
 
         System.out.println("Peter uses his teaching skills...See how much we have learnt?!?!");
 
-        powerUpGroup(groupList);
+        żabki.powerUpGroup();
         writeListToConsole(groupList);
 
         writeAndWait(scanner, "Day four training. Do you want to commence?");
 
         System.out.println("Peter uses his teaching skills...Just think of all the possible applications!!!");
 
-        powerUpGroup(groupList);
+        żabki.powerUpGroup();
         writeListToConsole(groupList);
 
         writeAndWait(scanner, "Day five training. Do you want to commence?");
 
         System.out.println("Peter uses his teaching skills...That's awesome!");
 
-        powerUpGroup(groupList);
+        żabki.powerUpGroup();
         writeListToConsole(groupList);
 
         writeAndWait(scanner, "It's weekend. Go home.");
@@ -91,11 +96,6 @@ public class Main {
         scanner.nextLine();
     }
 
-    private static void powerUpGroup(ArrayList<GroupMember> groupList) {
-        for (GroupMember groupMember :groupList){
-            groupList.get(6).supportMember(groupMember);
-        }
-    }
 
     private static void writeListToConsole(ArrayList<GroupMember> groupList) {
         int i = 0;
