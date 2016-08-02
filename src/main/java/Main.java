@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 /**
  * Created by Wojt on 2016-07-31.
@@ -5,21 +6,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[]args) {
 
-        Groupmember gm = new Groupmember("Anawoj", 100, 100 );
-        Groupmember gm1 = new Groupmember("Karo", 100, 100);
-        Groupmember gm2 = new Groupmember("Merrylouiss",100, 100);
-        Groupmember gm3 = new Groupmember("Michalina", 100, 100);
-        Groupmember gm4 = new Groupmember("Youlek", 100, 100);
-        Groupmember gm5 = new Groupmember("Voyt", 100, 100);
-        Groupmember gm6 = new Groupmember("Piotr", 9001, 3000);
+        ArrayList<GroupMember> groupList = new ArrayList<>();
 
-        System.out.println(gm);
-        System.out.println(gm1);
-        System.out.println(gm2);
-        System.out.println(gm3);
-        System.out.println(gm4);
-        System.out.println(gm5);
-        System.out.println(gm6);
+        groupList.add(new GroupMember("Anawoj", 100, 100 ));
+        groupList.add(new GroupMember("Karo", 100, 100));
+        groupList.add(new GroupMember("Merrylouiss",100, 100));
+        groupList.add(new GroupMember("Michalina", 100, 100));
+        groupList.add(new GroupMember("Youlek", 100, 100));
+        groupList.add(new GroupMember("Voyt", 100, 100));
+        groupList.add(new GroupMember("Piotr", 9001, 3000));
+
+        int i = 0;
+        while (i <groupList.size()) {
+            GroupMember groupMember = groupList.get(i);
+            System.out.println(groupList.get(i));
+            i += 1;
+        }
 
         System.out.println("Day one training. WOWOWOW!!! Peter's Power is over 9000!");
         new Scanner(System.in).nextLine();
@@ -30,101 +32,97 @@ public class Main {
 
         System.out.println("Peter uses his teaching skills...I can see the code!");
 
-        gm6.supportMember(gm6, gm);
-        gm6.supportMember(gm6, gm1);
-        gm6.supportMember(gm6, gm2);
-        gm6.supportMember(gm6, gm3);
-        gm6.supportMember(gm6, gm4);
-        gm6.supportMember(gm6, gm5);
+        groupList.get(6).supportMember(groupList.get(0));
+        groupList.get(6).supportMember(groupList.get(1));
+        groupList.get(6).supportMember(groupList.get(2));
+        groupList.get(6).supportMember(groupList.get(3));
+        groupList.get(6).supportMember(groupList.get(4));
+        groupList.get(6).supportMember(groupList.get(5));
 
 
-        System.out.println(gm);
-        System.out.println(gm1);
-        System.out.println(gm2);
-        System.out.println(gm3);
-        System.out.println(gm4);
-        System.out.println(gm5);
-        System.out.println(gm6);
+        i = 0;
+        while (i <groupList.size()) {
+            GroupMember groupMember = groupList.get(i);
+            System.out.println(groupList.get(i));
+            i += 1;
+        }
+
 
         System.out.println("Day two training. Do you want to commence?");
         new Scanner(System.in).nextLine();
 
         System.out.println("Peter uses his teaching skills...OMG!!!");
 
-        gm6.supportMember(gm6, gm);
-        gm6.supportMember(gm6, gm1);
-        gm6.supportMember(gm6, gm2);
-        gm6.supportMember(gm6, gm3);
-        gm6.supportMember(gm6, gm4);
-        gm6.supportMember(gm6, gm5);
+        groupList.get(6).supportMember(groupList.get(0));
+        groupList.get(6).supportMember(groupList.get(1));
+        groupList.get(6).supportMember(groupList.get(2));
+        groupList.get(6).supportMember(groupList.get(3));
+        groupList.get(6).supportMember(groupList.get(4));
+        groupList.get(6).supportMember(groupList.get(5));
 
-        System.out.println(gm);
-        System.out.println(gm1);
-        System.out.println(gm2);
-        System.out.println(gm3);
-        System.out.println(gm4);
-        System.out.println(gm5);
-        System.out.println(gm6);
+        i = 0;
+        while (i <groupList.size()) {
+            GroupMember groupMember = groupList.get(i);
+            System.out.println(groupList.get(i));
+            i += 1;
+        }
 
         System.out.println("Day three training. Do you want to commence?");
         new Scanner(System.in).nextLine();
 
         System.out.println("Peter uses his teaching skills...See how much we have learnt?!?!");
 
-        gm6.supportMember(gm6, gm);
-        gm6.supportMember(gm6, gm1);
-        gm6.supportMember(gm6, gm2);
-        gm6.supportMember(gm6, gm3);
-        gm6.supportMember(gm6, gm4);
-        gm6.supportMember(gm6, gm5);
+        groupList.get(6).supportMember(groupList.get(0));
+        groupList.get(6).supportMember(groupList.get(1));
+        groupList.get(6).supportMember(groupList.get(2));
+        groupList.get(6).supportMember(groupList.get(3));
+        groupList.get(6).supportMember(groupList.get(4));
+        groupList.get(6).supportMember(groupList.get(5));
 
-        System.out.println(gm);
-        System.out.println(gm1);
-        System.out.println(gm2);
-        System.out.println(gm3);
-        System.out.println(gm4);
-        System.out.println(gm5);
-        System.out.println(gm6);
+        i = 0;
+        while (i <groupList.size()) {
+            GroupMember groupMember = groupList.get(i);
+            System.out.println(groupList.get(i));
+            i += 1;
+        }
 
         System.out.println("Day four training. Do you want to commence?");
         new Scanner(System.in).nextLine();
 
         System.out.println("Peter uses his teaching skills...Just think of all the possible applications!!!");
 
-        gm6.supportMember(gm6, gm);
-        gm6.supportMember(gm6, gm1);
-        gm6.supportMember(gm6, gm2);
-        gm6.supportMember(gm6, gm3);
-        gm6.supportMember(gm6, gm4);
-        gm6.supportMember(gm6, gm5);
+        groupList.get(6).supportMember(groupList.get(0));
+        groupList.get(6).supportMember(groupList.get(1));
+        groupList.get(6).supportMember(groupList.get(2));
+        groupList.get(6).supportMember(groupList.get(3));
+        groupList.get(6).supportMember(groupList.get(4));
+        groupList.get(6).supportMember(groupList.get(5));
 
-        System.out.println(gm);
-        System.out.println(gm1);
-        System.out.println(gm2);
-        System.out.println(gm3);
-        System.out.println(gm4);
-        System.out.println(gm5);
-        System.out.println(gm6);
+        i = 0;
+        while (i <groupList.size()) {
+            GroupMember groupMember = groupList.get(i);
+            System.out.println(groupList.get(i));
+            i += 1;
+        }
 
         System.out.println("Day five training. Do you want to commence?");
         new Scanner(System.in).nextLine();
 
         System.out.println("Peter uses his teaching skills...That's awesome!");
 
-        gm6.supportMember(gm6, gm);
-        gm6.supportMember(gm6, gm1);
-        gm6.supportMember(gm6, gm2);
-        gm6.supportMember(gm6, gm3);
-        gm6.supportMember(gm6, gm4);
-        gm6.supportMember(gm6, gm5);
+        groupList.get(6).supportMember(groupList.get(0));
+        groupList.get(6).supportMember(groupList.get(1));
+        groupList.get(6).supportMember(groupList.get(2));
+        groupList.get(6).supportMember(groupList.get(3));
+        groupList.get(6).supportMember(groupList.get(4));
+        groupList.get(6).supportMember(groupList.get(5));
 
-        System.out.println(gm);
-        System.out.println(gm1);
-        System.out.println(gm2);
-        System.out.println(gm3);
-        System.out.println(gm4);
-        System.out.println(gm5);
-        System.out.println(gm6);
+        i = 0;
+        while (i <groupList.size()) {
+            GroupMember groupMember = groupList.get(i);
+            System.out.println(groupList.get(i));
+            i += 1;
+        }
 
 
         System.out.println("It's weekend. Go home.");
@@ -142,5 +140,8 @@ public class Main {
         System.out.println("This time it's serious, though.");
         new Scanner(System.in).nextLine();
         System.out.println("I've taken the red pill.");
+        
+
+
     }
 }
