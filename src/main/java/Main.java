@@ -41,6 +41,7 @@ public class Main {
 
         żabki.powerUpGroup();
 
+        // Each memeber support each member
 //        for (GroupMember supportingGroupMember :groupList){
 //            for(GroupMember supportedGroupMember :groupList) {
 //                supportingGroupMember.supportMember(supportedGroupMember);
@@ -56,7 +57,9 @@ public class Main {
         żabki.powerUpGroup();
         writeListToConsole(groupList);
 
-//        writeListToConsole(żabki.getMembersList());
+//        ArrayList<GroupMember> membersList = żabki.getMembersList();
+//        writeListToConsole(membersList);
+//
 //        żabki.writeToConsole();
 
         writeAndWait(scanner, "Day three training. Do you want to commence?");

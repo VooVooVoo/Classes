@@ -11,9 +11,24 @@ public class Group {
     }
 
     public void powerUpGroup() {
-        for (GroupMember groupMember :groupList){
+        for (GroupMember groupMember : groupList) {
             groupList.get(6).supportMember(groupMember);
         }
     }
 
+    public ArrayList<GroupMember> getMembersList() {
+        return groupList;
+    }
+
+    public void writeToConsole() {
+        System.out.println(this);
+    }
+
+    public String toString() {
+        String result = "Grupa: " + name + "\n";
+        for (GroupMember groupMember : groupList) {
+            result += groupMember;
+        }
+        return result;
+    }
 }
